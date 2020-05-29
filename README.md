@@ -1,8 +1,8 @@
 # MessForum
-A web-portal for hostels which makes proper interaction between users and the hostel authorities
+A web and android portal for hostels which makes proper interaction between users and the hostel authorities
 
 MessForum
-A web-portal for hostels to enable proper interaction between students and hostel authorities
+A web and android portal for hostels to enable proper interaction between students and hostel authorities
 
 Two modules namely student and admin are included.
 
