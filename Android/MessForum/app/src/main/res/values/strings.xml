@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">MessForum Admin</string>
+    <!--string name="serverIp">http://192.168.43.228:3000</string-->
+    <!--string name="serverIp">http://10.10.158.8:3000</string-->
+    <!--string name="serverIp">http://10.10.49.14:3000</string-->
+    <string name="serverIp">http://192.168.43.17:3000</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+                <!--User Page-->
+    <string name="student_details">Student Details</string>
+
+    <string name="add_student">Add Student</string>
+    <string name="register_no">Register No</string>
+    <string name="name">Name</string>
+    <string name="year">Batch</string>
+    <string name="dept">Dept</string>
+    <string name="room_no">Room No</string>
+    <string name="gender">Gender</string>
+    <string name="password">Password</string>
+    <string name="add">ADD</string>
+
+    <string name="details">Details</string>
+    <string name="display">Display All</string>
+    <string name="display_students">Display Students</string>
+    <string name="remove">Remove</string>
+    <string name="search_student">Search Student</string>
+    <string name="search">Search</string>
+
+            <!--Dashboard Page-->
+    <string name="dashboard">Dashboard</string>
+
+    <string name="modify_meals">Modify Meals</string>
+    <string name="sno">S.No</string>
+    <string name="new_menu1">New Meal</string>
+    <string name="change">Change</string>
+
+    <string name="break_fast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="s_no">S.No</string>
+    <string name="day">Day</string>
+    <string name="dmenu">Menu</string>
+
+    <string name="new_menu">New Menu</string>
+
+                    <!--Count Page-->
+    <string name="count">Count</string>
+    <string name="food_to_be_prepared">Food To be Prepared</string>
+    <string name="total">Total</string>
+
+                    <!--Token Page-->
+    <string name="token">Token</string>
+    <string name="registered_tokens">Registered Tokens</string>
+    <string name="display_all">Display All</string>
+
+
+                    <!--Notification Page-->
+    <string name="notification">Notification</string>
+    <string name="today_s_notice">Today\'s Notice</string>
+    <string name="hii_admin01">Hii Admin01</string>
+    <string name="write_notification">Write Notification</string>
+    <string name="submit">Submit</string>
+
+    <string name="pass">Password</string>
+    <string name="user">Username</string>
+
+
+</resources>

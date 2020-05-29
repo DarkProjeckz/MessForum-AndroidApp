@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity"
+    android:background="@color/loginBack">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        android:fadeScrollbars="false"
+        android:layout_alignParentStart="true"
+        android:scrollbarThumbVertical="@color/colorPrimary"
+        android:scrollbarSize="8dip"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"
+                    app:cardElevation="50dp"
+                    app:cardCornerRadius="0sp"
+                    tools:ignore="MissingConstraints">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorHorizon">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="20dp">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTitle"
+                                android:gravity="center_horizontal"
+                                android:padding="20dp"
+                                android:layout_margin="20dp"
+                                android:text="LOGIN"
+                                android:textColor="@color/colorBackgLight"
+                                android:elevation="40dp"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/regno"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                app:boxStrokeColor="@color/colorLightBlack"
+                                app:hintEnabled="true"
+                                app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                                app:hintTextColor="@android:color/black">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/user"
+                                    android:inputType="number"
+                                    android:textSize="20dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/pass"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                app:endIconMode="password_toggle"
+                                app:hintEnabled="true"
+                                app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
+                                app:boxStrokeColor="@color/colorLightBlack"
+                                app:hintTextColor="@android:color/black">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/editText2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/pass"
+                                    android:inputType="textPassword"
+                                    android:textSize="20dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/button4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:backgroundTint="@color/colorTitle"
+                                android:textColor="@color/colorBackgLight"
+                                android:onClick="goApp"
+                                android:text="SUBMIT"
+                                tools:ignore="OnClick" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

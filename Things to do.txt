@@ -1,0 +1,23 @@
+Read this !!
+
+Node.js should be installed in your machine.
+Before launching app, node.js server should be listening
+
+Required modules should be added if any.
+Connect the android app and your system(PC or Laptop) in same local network unless you deploy globally.
+Check for IP address of your machine and modify in two files in both admin and student apps (totally 4 files)
+
+Student App:
+File 1 ->	"MessForumStudent\app\src\main\res\values\strings.xml" for key "serverIp"
+File 2 ->	"MessForumStudent\app\src\main\res\xml\network_security_config.xml" for element <domains>
+
+Admin  App:
+File 1 ->	"MessForum\app\src\main\res\values\strings.xml" for key "serverIp"
+File 2 ->	"MessForum\app\src\main\res\xml\network_security_config.xml" for element <domains>
+
+The database with its tables are build.
+Things to do:
+
+* Create a database named "sample" in your MySQL console either phpmyadmin or MySQL Workbench
+* Import the sample.sql file from the console
+* Now you can use the the tables and its data

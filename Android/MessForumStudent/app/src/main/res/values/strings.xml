@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">MessForum</string>
+    <!--string name="serverIp">http://10.10.158.8:3000</string-->
+    <!--string name="serverIp">http://192.168.43.228:3000</string-->
+    <!--string name="serverIp">http://127.0.0.1:3000</string-->
+    <string name="serverIp">http://192.168.43.17:3000</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <!--User Page-->
+    <string name="user_profile">User Profile</string>
+    <string name="info">Info</string>
+
+    <!--Dashboard Page-->
+    <string name="dashboard">Dashboard</string>
+
+    <string name="modify_meals">Modify Meals</string>
+    <string name="sno">sno</string>
+    <string name="new_menu1">new menu</string>
+    <string name="change">Change</string>
+
+    <string name="break_fast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="s_no">S.No</string>
+    <string name="day">Day</string>
+    <string name="dmenu">Menu</string>
+
+    <string name="new_menu">New Menu</string>
+
+    <!--Count Page-->
+    <string name="food_count">Food Count</string>
+    <string name="id">ID</string>
+    <string name="name">Name</string>
+    <string name="check">Check</string>
+    <string name="submit">SUBMIT</string>
+
+    <!--Token-->
+
+    <string name="tokens">Tokens</string>
+    <string name="register_tokens">Register Tokens</string>
+    <string name="no_of_tokens">No. of Tokens</string>
+    <string name="egg">Egg</string>
+    <string name="optional">optional</string>
+    <string name="chicken">Chicken</string>
+    <string name="mutton">Mutton</string>
+    <string name="gobi">Gobi</string>
+    <string name="mushroom">Mushroom</string>
+
+    <!--Notification-->
+    <string name="notification">Notification</string>
+    <string name="today_s_notice">Today\'s Notice</string>
+    <string name="hii_asif">Hii Asif</string>
+    <string name="write_notification">Write Notification</string>
+    <string name="your_notification">Your Message</string>
+
+
+    <string name="pass">Password</string>
+    <string name="user">Register Number</string>
+
+</resources>

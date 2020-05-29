@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_weight="2"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:background="@color/colorBackg"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@drawable/scroll"
+        android:scrollbarSize="8dip"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:background="@color/colorBackg">
+
+
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorBackg"
+                android:backgroundTint="@color/colorBBackg"
+                android:backgroundTintMode="src_atop">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/item_title_break_fast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardBackgroundColor="@color/colorTitle"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="30dp"
+                    app:contentPadding="4dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/item_break_fast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/break_fast"
+                        android:textColor="@color/colorTextTitle"
+                        android:textSize="@dimen/textTitle"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="@color/colorHorizon"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    >
+
+                    <HorizontalScrollView
+                        android:id="@+id/hscrll1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/colorHorizon">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/colorHorizon"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="0dp"
+                            app:contentPaddingBottom="5dp"
+                            app:contentPaddingLeft="5dp"
+                            app:contentPaddingRight="5dp"
+                            app:contentPaddingTop="40dp">
+
+                            <TableLayout
+                                android:id="@+id/table_break_fast"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="fill_horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_bsno"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/s_no"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textColor="@color/colorTable"
+                                        android:textStyle="bold" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_bday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/day"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textColor="@color/colorTable"
+                                        android:textStyle="bold" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_bmenu"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/dmenu"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textColor="@color/colorTable"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </HorizontalScrollView>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorBackg"
+                android:backgroundTint="@color/colorBBackg"
+                android:backgroundTintMode="src_atop"
+                android:layout_marginTop="30dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/item_title_lunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardBackgroundColor="@color/colorTitle"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="30dp"
+                    app:contentPadding="4dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/item_lunch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/lunch"
+                        android:textColor="@color/colorTextTitle"
+                        android:textSize="@dimen/textTitle"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="@color/colorHorizon"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    >
+
+                    <HorizontalScrollView
+                        android:id="@+id/hscrll2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/colorHorizon">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/colorHorizon"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="0dp"
+                            app:contentPaddingBottom="5dp"
+                            app:contentPaddingLeft="5dp"
+                            app:contentPaddingRight="5dp"
+                            app:contentPaddingTop="40dp">
+
+                            <TableLayout
+                                android:id="@+id/table_lunch"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="fill_horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_lsno"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/s_no"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textColor="@color/colorTable"
+                                        android:textStyle="bold" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_lday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/day"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textColor="@color/colorTable"
+                                        android:textStyle="bold" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_lmenu"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/dmenu"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textColor="@color/colorTable"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </HorizontalScrollView>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorBackg"
+                android:backgroundTint="@color/colorBBackg"
+                android:backgroundTintMode="src_atop">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/item_title_dinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardBackgroundColor="@color/colorTitle"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="30dp"
+                    app:contentPadding="4dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/item_dinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/dinner"
+                        android:textColor="@color/colorTextTitle"
+                        android:textSize="@dimen/textTitle"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardBackgroundColor="@color/colorHorizon"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp">
+
+                    <HorizontalScrollView
+                        android:id="@+id/hscrll3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/colorHorizon">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/colorHorizon"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="0dp"
+                            app:contentPaddingBottom="5dp"
+                            app:contentPaddingLeft="5dp"
+                            app:contentPaddingRight="5dp"
+                            app:contentPaddingTop="40dp">
+
+                            <TableLayout
+                                android:id="@+id/table_dinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="fill_horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_dsno"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/s_no"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textColor="@color/colorTable"
+                                        android:textStyle="bold" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_dday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/day"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textColor="@color/colorTable"
+                                        android:textStyle="bold" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_dmenu"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/dmenu"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textColor="@color/colorTable"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </HorizontalScrollView>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

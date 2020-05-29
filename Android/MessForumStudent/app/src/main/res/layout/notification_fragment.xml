@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="5dp"
+    android:background="@color/colorBackg">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@drawable/scroll"
+        android:scrollbarSize="8dip"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:background="@color/colorBackg">
+
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorBackg"
+                android:backgroundTint="@color/colorBBackg"
+                android:backgroundTintMode="src_atop">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/item_title_card_search"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="30dp"
+                    app:contentPadding="4dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardBackgroundColor="@color/colorTitle">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/item_search_token"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextTitle"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:text="@string/today_s_notice"
+                        android:textSize="@dimen/textTitle" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/colorHorizon"
+                    app:contentPadding="15dp"
+                    >
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/username_student"
+                        android:layout_gravity="fill_horizontal"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/textNormal"
+                        android:layout_marginTop="40dp"
+                        android:textColor="@color/colorTable"
+                        android:layout_marginBottom="10dp"
+                        />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="6"
+                        android:layout_marginTop="85dp"
+                        android:background="@drawable/textboxshape"
+                        android:textColor="@color/colorTable"
+                        android:textSize="@dimen/textNormal"
+                        android:id="@+id/text_area_notice"
+                        android:inputType="textMultiLine"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:scrollHorizontally="false"
+                        android:gravity="top|start"
+                        android:padding="8dp"
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+            <!--RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorBackg"
+                android:backgroundTint="@color/colorBBackg"
+                android:layout_marginTop="30dp"
+                android:backgroundTintMode="src_atop">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/item_title_card_yours"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="30dp"
+                    app:contentPadding="4dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardBackgroundColor="@color/colorTitle">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/item_yours_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextTitle"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:text="@string/your_notification"
+                        android:textSize="@dimen/textTitle" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/colorHorizon"
+                    app:contentPadding="15dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/item_title_add_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorHorizon"
+                        android:backgroundTintMode="src_atop"
+                        android:layout_marginTop="45dp"
+                        app:boxStrokeColor="@color/colorLightBlack"
+                        app:boxStrokeWidth="2dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/text_area_notice1"
+                            android:inputType="textMultiLine"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:lines="4"
+                            android:scrollHorizontally="false"
+                            android:hint="@string/write_notification"
+                            android:gravity="top|start"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/button_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="180dp"
+                        android:background="@color/colorTitle"
+                        android:textColor="@color/colorTextTitle"
+                        android:textStyle="bold"
+                        app:backgroundTint="@color/colorTitle"
+                        android:text="@string/submit"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

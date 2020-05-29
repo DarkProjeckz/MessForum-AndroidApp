@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="5dp"
+    android:background="@color/colorBackg"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@drawable/scroll"
+        android:scrollbarSize="8dip"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/colorBackg">
+
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorBackg"
+                android:backgroundTint="@color/colorBBackg"
+                android:backgroundTintMode="src_atop">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/item_title_card_count"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="30dp"
+                    app:contentPadding="4dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:cardBackgroundColor="@color/colorTitle">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/item_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/food_to_be_prepared"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextTitle"
+                        android:textSize="@dimen/textTitle"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/colorHorizon"
+                    >
+
+                    <HorizontalScrollView
+                        android:id="@+id/hscrll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorHorizon">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_gravity="center_horizontal"
+                            app:cardCornerRadius="6dp"
+                            app:cardElevation="0dp"
+                            app:contentPaddingTop="45dp"
+                            app:contentPaddingRight="5dp"
+                            app:contentPaddingLeft="5dp"
+                            app:contentPaddingBottom="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            app:cardBackgroundColor="@color/colorHorizon">
+
+                            <TableLayout
+                                android:id="@+id/table_mod_meal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                >
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="fill_horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/name"
+                                        android:textColor="@color/colorTable"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textStyle="bold" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_count_head"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/count"
+                                        android:textColor="@color/colorTable"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textStyle="bold" />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/total"
+                                        android:textColor="@color/colorTable"
+                                        android:textSize="@dimen/textNormal"
+                                        android:textStyle="bold" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="fill_horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_name_breakfast"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/break_fast"
+                                        android:textColor="@color/colorTable"
+                                        android:textSize="@dimen/textNormal"
+                                        />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_breakfast_count"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+
+                                        android:textSize="@dimen/textNormal"
+                                        />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_breakfast_total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="500"
+                                        android:textColor="@color/colorTable"
+                                        android:textSize="@dimen/textNormal"
+                                        />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="fill_horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_lunch"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/lunch"
+                                        android:textColor="@color/colorTable"
+                                        android:textSize="@dimen/textNormal"
+                                        />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_lunch_count"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+
+                                        android:textSize="@dimen/textNormal"
+                                        />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_lunch_total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="500"
+                                        android:textColor="@color/colorTable"
+                                        android:textSize="@dimen/textNormal"
+                                        />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="fill_horizontal">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_dinner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="@string/dinner"
+                                        android:textColor="@color/colorTable"
+                                        android:textSize="@dimen/textNormal"
+                                        />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_dinner_count"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+
+                                        android:textSize="@dimen/textNormal"
+                                        />
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:id="@+id/item_dinner_total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/cellshape"
+                                        android:padding="12dp"
+                                        android:text="500"
+                                        android:textColor="@color/colorTable"
+                                        android:textSize="@dimen/textNormal"
+                                        />
+
+                                </TableRow>
+
+                            </TableLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </HorizontalScrollView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/colorHorizon"
+                        android:layout_marginTop="280dp"
+                        app:contentPadding="20dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="0dp"
+                        >
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/endReg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="End Registration"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTextTitle"
+                            android:backgroundTint="@color/colorTitle"
+                            />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
